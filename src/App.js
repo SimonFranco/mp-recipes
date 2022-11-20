@@ -4,7 +4,7 @@ import AppNavbar from './Components/NavBar';
 
 function App() {
   return (
-    <div className="jumbo">
+    <div>
       <AppNavbar />
       <Jumbo />
       <h1>recipe App</h1>
