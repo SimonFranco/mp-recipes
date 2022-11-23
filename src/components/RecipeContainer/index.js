@@ -2,17 +2,18 @@ import React from 'react';
 import "./styles.css";
 import RecipeCard from "../RecipeCard";
 
-function RecipeContainer({recipes}) {
+function RecipeContainer() {
+  const [recipe] = React.useState([]);
   // return (
   //   <div className='recipe-container'>
-  //       {recipes.map((recipes) => (
-  //           <RecipeCard {...recipes}/>
+  //       {recipe.map((recipe) => (
+  //           <RecipeCard  key={recipe.idRecipe} {...recipe}/>
   //       ))}
   //   </div>
   // );
   return (
-    <div>
-      <RecipeCard {...recipes} />
+    <div className='recipe-container'>
+      <RecipeCard key={recipe.idRecipe} {...recipe} />
     </div>
   )
 }
