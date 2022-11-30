@@ -7,10 +7,9 @@ const [show, setShow] = useState(false);
 const handleClose = () => setShow(false);
 const handleShow = () => setShow(true);
 
-    return (
-    <div className='row-cols-7 px-1 mx-4'> 
+    return ( 
     <>
-        <Button className='p-1 mx-4' variant="primary" onClick={handleShow}>
+        <Button className='p-1 m-2 mx-3' style={{position:'relative', right:'-40px'}} variant="primary" onClick={handleShow}>
             See More
         </Button>
 
@@ -29,7 +28,6 @@ const handleShow = () => setShow(true);
             </Modal.Footer>
         </Modal>
     </>
-    </div>
     );
 }
 
