@@ -23,9 +23,10 @@ function Login() {
   }
 
   return (
+  <div className="col-5"> 
     <Form onSubmit={handleLogin}>
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Label>Email address</Form.Label>
+    <Form.Group className="mb-3" controlId="formBasicEmail" style={{position:'relative', margin:'40px',padding:'20px'}}>
+      <Form.Label className="text-light">Email address</Form.Label>
       <Form.Control 
       type="email" 
       placeholder="Enter email"
@@ -33,12 +34,12 @@ function Login() {
       value={email}
       required
       />
-      <Form.Text className="text-muted">
+      <Form.Text className="text-light">
         We'll never share your email with anyone else.
       </Form.Text>
     </Form.Group>
 
-    <Form.Group className="mb-3" controlId="formBasicPassword">
+    <Form.Group className="mb-3 text-light" controlId="formBasicPassword" style={{position:'relative', margin:'40px',padding:'20px', bottom:'30px'}}>
       <Form.Label>Password</Form.Label>
       <Form.Control 
       type="password" 
@@ -49,10 +50,11 @@ function Login() {
       />
     </Form.Group>
 
-    <Button variant="primary" type="submit">
+    <Button variant="primary" type="submit" style={{position:'relative',left:'60px',bottom:'30px'}}>
       Login
     </Button>
-  </Form>
+    </Form>
+  </div>
   );
 }
 

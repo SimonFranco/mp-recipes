@@ -9,7 +9,7 @@ import { useContext } from 'react';
 function AppNavbar() {
   const {user} = useContext(MyContext)
   return (
-    <Navbar expand="lg" style={{$color:'#565a75'}}>
+    <Navbar expand="lg" style={{$color:'#565a75', borderBottom:'groove',borderWidth:'1px'}}>
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand className='text-light'>Meals</Navbar.Brand>
