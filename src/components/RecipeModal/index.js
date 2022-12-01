@@ -10,7 +10,7 @@ const handleShow = () => setShow(true);
     return ( 
     <>
         <Button className='p-1 m-2 mx-3' style={{position:'relative', right:'-40px'}} variant="primary" onClick={handleShow}>
-            See More
+            Cook This!
         </Button>
 
         <Modal show={show} onlyide={handleClose}>
