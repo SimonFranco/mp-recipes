@@ -1,0 +1,2 @@
+# mp-recipes
+We created a recipe website in order for our users to look up different recipes. We were able to combine both frontend and backend while ensuring Bootstrap was used as well. Our project takes an entire database from online and places it inside our website to make it easier for our user to navigate. While we used Bootstrap, we still customized to add our personal touches to the website. Everyone played a key role in creating the website.
