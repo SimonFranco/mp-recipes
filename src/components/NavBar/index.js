@@ -12,7 +12,7 @@ function AppNavbar() {
     <Navbar expand="lg" style={{$color:'#565a75'}}>
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand className='text-light'>Meals</Navbar.Brand>
+          <Navbar.Brand className='text-light'>Recipes</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

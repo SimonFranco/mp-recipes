@@ -1,7 +1,7 @@
 import React from 'react';
 import "./styles.css";
 import RecipeCard from "../RecipeCard";
-// import RecipeModal from '../RecipeModal';
+
 
 function RecipeContainer({ meals }) {
   // const [meals] = React.useState([]);
