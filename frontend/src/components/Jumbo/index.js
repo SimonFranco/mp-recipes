@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import {useState, useContext} from "react";
 import "./styles.css";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
 import { MyContext } from "../../context"
@@ -25,7 +25,7 @@ function Jumbo() {
           value={searchInput}
           onChange={(e) => setsearchInput(e.target.value)}
         />
-        <Button variant="danger" id="recipe-finder" onClick={handleSearch}>
+        <Button id="recipe-finder" onClick={handleSearch}>
           Get to Cooking!
         </Button>
       </InputGroup>

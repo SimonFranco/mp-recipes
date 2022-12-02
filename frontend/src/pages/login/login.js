@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState, useContext } from "react";
 import { Form, Button } from "react-bootstrap";
 import { MyContext } from "../../context";
-
+import "./style.css";
 
 
 function Login() {
@@ -17,7 +17,7 @@ function Login() {
     }
 
     axios
-      .post("http://localhost:5000/login", { email, password })
+      .post("http://localhost:3000/login", { email, password })
       .then(({ data }) => setUser(data))
       .catch((err) => console.log(err));
   }
@@ -55,5 +55,6 @@ function Login() {
   </Form>
   );
 }
+
 
 export default Login;

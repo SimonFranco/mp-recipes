@@ -14,7 +14,7 @@ function Signup() {
         return alert("Please fill out the fields");
       }
       axios
-        .post("http://localhost:5000/users", { email, password })
+        .post("http://localhost:3000/users", { email, password })
         .then(({ data }) => setUser(data))
         .catch((err) => console.log(err));
     }
